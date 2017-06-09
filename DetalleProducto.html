@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Detalle Producto</title>        
+        <link rel="stylesheet" href="">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script language="JavaScript">
+            function pregunta() {
+                if (confirm('¿Estas seguro que desea realizar la compra?')) {
+                    document.enviar.submit()
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <br><br>
+                <div class="col-sm-8 col-md-offset-1"> <h3>[Nombre del Producto............]</h3>
+
+                </div>
+                <div class="col-sm-1">
+                    <form name="enviar">
+                        <button type="submit" onclick="pregunta()" class="btn btn-danger" >Realizar Compra</button>
+                    </form>
+                </div>
+
+            </div>      
+            <div class="row">
+                <div class="col-sm-3 col-md-offset-1">         
+                    <img src="http://i.imgur.com/huDUFch.jpg" class="img-rounded" alt="Cinque Terre" width="278" height="336"> 
+                </div>
+                <div class="col-sm-7">
+                    <h4>[Nombre del Vendedor..............]</h4>
+                    <div class="form-group">
+                        <label for="comment">Descripción:</label>
+                        <textarea  readonly class="form-control" rows="7" id="comment"></textarea>
+                    </div>       
+                </div>
+                <div class="col-sm-2">
+                    <h4><b>Hora</b></h4>  
+                    <h4>Inicio:</h4>    
+                    <h4>Fin:</h4>    
+                </div>
+                <div class="col-sm-2">
+                    <h4><b>Fecha</b></h4>  
+
+                    <h4>Fin:</h4>    
+                </div>
+            </div>    
+            <div class="row">
+                <div class="col-sm-10 col-md-offset-1">
+                    <br><br>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">El Rashoo <span><b>comentó:</b></span></div>
+                        <div class="panel-body">
+                            Cuando lo necesites, añade un título al panel aplicando al texto del título la clase
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">El Kevin <span><b>comentó:</b></span></div>
+                        <div class="panel-body">
+                            Los paneles también pueden contener un pie o zona inferior donde incluir
+                            por ejemplo los botones de acción o cualquier otro texto secundario.
+                            Estas zonas inferiores no heredan los colores ni los estilos cuando se utilizan los paneles contextuales que se explican en las siguientes secciones.
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">El Rashoo <span><b>comentó:</b></span></div>
+                        <div class="panel-body">
+                            Cuando lo necesites, añade un título al panel aplicando al texto del título la clase
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">El Kevin <span><b>comentó:</b></span></div>
+                        <div class="panel-body">
+                            Los paneles también pueden contener un pie o zona inferior donde incluir
+                            por ejemplo los botones de acción o cualquier otro texto secundario.
+                            Estas zonas inferiores no heredan los colores ni los estilos cuando se utilizan los paneles contextuales que se explican en las siguientes secciones.
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">El Rashoo <span><b>comentó:</b></span></div>
+                        <div class="panel-body">
+                            Cuando lo necesites, añade un título al panel aplicando al texto del título la clase
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">El Kevin <span><b>comentó:</b></span></div>
+                        <div class="panel-body">
+                            Los paneles también pueden contener un pie o zona inferior donde incluir
+                            por ejemplo los botones de acción o cualquier otro texto secundario.
+                            Estas zonas inferiores no heredan los colores ni los estilos cuando se utilizan los paneles contextuales que se explican en las siguientes secciones.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="4" id="comment" placeholder="Escriba su comentario..."></textarea>
+                    </div> 
+                    <form>
+                        <button type="submit" class="btn btn-danger" >Enviar Comentario</button>
+                    </form>    
+                </div>
+            </div>    
+            <br>
+        </div>  
+    </body>
+</html>
