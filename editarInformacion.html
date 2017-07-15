@@ -23,40 +23,48 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body >
       <div class="container ">
-        <form action="/action_page.php">
+
           <div class="row" >
             <div class="col-md-9">
               <h1 class="titulo">EDITAR INFORMACIÓN</h1>
             </div>
-            
           </div>
-          
-          <div class="row">
-            
-            <div class="col-md-8">
-              <div class="jumbotron">
-                <b><label>Nombre: </label></b> 
+
+        <form action="/action_page.php">
+
+        <div class="jumbotron">
+             
+            <div class="row">
+
+                <div class="col">
+                  <b><label>Nombre: </label></b> 
+                  <input type="text" class="form-control" name = "name" id="name" placeholder="Ingrese su nombre">  
+                </div>
+                <div class="col">
+                  <b><label>Apellido: </label> </b>
+                  <input type="text" class="form-control" name = "lastname" id="lastname" placeholder="Ingrese su apellido">
+                </div>
+
+                <div class="col">
+                  <b><label>Alias: </label></b>                 
+                    <input type="text" class="form-control" name = "alias" id="alias" placeholder="Ingrese su alias">
+                </div>
                     
-                <input type="text" class="form-control" name = "name" id="name" placeholder="Ingrese su nombre">                
+
                   
-                <b><label>Apellido: </label> </b>
-                <input type="text" class="form-control" name = "lastname" id="lastname" placeholder="Ingrese su apellido">                                
-                <b><label>Alias: </label></b>                 
-                <input type="text" class="form-control" name = "alias" id="alias" placeholder="Ingrese su alias">  
-                
-                  <br>                      
-                  
-                  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB40mKSFkIaqRI1xpZh-Z-myVr11Lhzysk&callback=initMap"
-                async defer></script>
-
-                <a id="editar" class="btn btn-success" href="..." role="button">Editar</a>
-
-
-              </div>
             </div>
-              
+            <div class="row justify-content-md-center">
+              <div >
+                <a id="editar" class="btn btn-success col-md-offset-5" href="..." role="button">Editar</a>
+              </div>
+              <div>
+                <a id="editar" class="btn btn-primary col-md-offset-5" href="..." role="button">Regresar</a>
+              </div>
+                
+                
+            </div>  
           </div>
 
 
@@ -69,20 +77,15 @@
             padding-left: 80px;
             margin-bottom: 40px;         
           }
-          .container{
-            padding-left: 280px;
-                    }
-          #subir{
-            margin-top: 10px;
-          }
+          
+          
           #editar{
-            margin-top: 30px;
-            margin-left: 140px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            padding-left: 70px;
-            padding-right: 70px ; 
+            
+            margin-top: 10px;
+              
+            padding: 10px;
             font-size: 2.0em;
+            
           }
 
           .titulo{
@@ -92,10 +95,12 @@
           }
 
           .jumbotron{
-            padding-top: 20px;
+            background-color: #ecb535 ;
           }
-          #fecha{
-            margin-left: 1px;
+
+          html body{
+            background-image: url("http://dissenyaweb.com/blog/diseno_web/wp-content/uploads/christian-background-loops.jpg");
+            
           }
         </style>
     
